@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="QRcode" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KX0-W0-2GO">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="410"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waw-yw-IxF">
+                                <rect key="frame" x="0.0" y="411" width="320" height="39"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YOD-8d-JWj">
+                                <rect key="frame" x="302.5" y="458" width="25" height="22"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Button" image="photo.fill.on.rectangle.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="sacnAlbumButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="63Y-eJ-cWY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfy-P1-BV1">
+                                <rect key="frame" x="83" y="454.5" width="154" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="GO Web!">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="openWebButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HsC-KY-CK0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujJ-1X-81E">
+                                <rect key="frame" x="11" y="454" width="43" height="30"/>
+                                <state key="normal" title="Clear QRCode"/>
+                                <connections>
+                                    <action selector="removeQRCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LkQ-L1-DNV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="YOD-8d-JWj" firstAttribute="leading" secondItem="Vfy-P1-BV1" secondAttribute="trailing" constant="65.5" id="93h-R1-bLj"/>
+                            <constraint firstItem="KX0-W0-2GO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9iE-NG-Jro"/>
+                            <constraint firstItem="Vfy-P1-BV1" firstAttribute="leading" secondItem="ujJ-1X-81E" secondAttribute="trailing" constant="29" id="Dku-pI-pfV"/>
+                            <constraint firstItem="waw-yw-IxF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KGK-cu-mTH"/>
+                            <constraint firstItem="ujJ-1X-81E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-127.5" id="Vwt-rQ-rIy"/>
+                            <constraint firstItem="Vfy-P1-BV1" firstAttribute="top" secondItem="waw-yw-IxF" secondAttribute="bottom" constant="4.5" id="WE7-Hv-Dbz"/>
+                            <constraint firstItem="KX0-W0-2GO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WtQ-Qm-yv6"/>
+                            <constraint firstItem="waw-yw-IxF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="XNq-Kz-Xpt"/>
+                            <constraint firstItem="ujJ-1X-81E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="11" id="ZZL-d5-Tn4"/>
+                            <constraint firstItem="waw-yw-IxF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mHX-BY-bET"/>
+                            <constraint firstItem="YOD-8d-JWj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="155" id="mN7-mI-e9K"/>
+                            <constraint firstAttribute="trailing" secondItem="YOD-8d-JWj" secondAttribute="trailing" constant="-7.5" id="nn4-Fc-WtX"/>
+                            <constraint firstItem="KX0-W0-2GO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="um7-Nc-qtF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="alumButton" destination="YOD-8d-JWj" id="bhz-a3-gGH"/>
+                        <outlet property="camview" destination="KX0-W0-2GO" id="3cM-wJ-b0Y"/>
+                        <outlet property="codeTextLable" destination="waw-yw-IxF" id="kmv-me-qsN"/>
+                        <outlet property="webButton" destination="Vfy-P1-BV1" id="Ssi-T3-Hj0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="136.28185907046478"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="photo.fill.on.rectangle.fill" catalog="system" width="128" height="98"/>
+    </resources>
+</document>
